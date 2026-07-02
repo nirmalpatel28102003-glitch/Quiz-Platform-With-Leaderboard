@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "id": "seed-1",
+      "playerName": "Maya",
+      "quizId": "web-fundamentals",
+      "quizTitle": "Web Fundamentals",
+      "correct": 5,
+      "total": 5,
+      "score": 100,
+      "timeTaken": 68,
+      "submittedAt": "2026-06-26T10:00:00.000Z"
+    },
+    {
+      "id": "seed-2",
+      "playerName": "Arjun",
+      "quizId": "computer-science",
+      "quizTitle": "Computer Science",
+      "correct": 4,
+      "total": 5,
+      "score": 80,
+      "timeTaken": 91,
+      "submittedAt": "2026-06-26T11:00:00.000Z"
+    },
+    {
+      "id": "seed-3",
+      "playerName": "Nora",
+      "quizId": "general-knowledge",
+      "quizTitle": "General Knowledge",
+      "correct": 4,
+      "total": 5,
+      "score": 80,
+      "timeTaken": 73,
+      "submittedAt": "2026-06-26T12:00:00.000Z"
+    }
+  ]
+}

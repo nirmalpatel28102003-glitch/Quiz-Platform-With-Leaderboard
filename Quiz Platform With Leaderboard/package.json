@@ -1,0 +1,17 @@
+{
+  "name": "quiz-platform",
+  "version": "1.0.0",
+  "description": "Full-stack quiz platform with persistent leaderboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "quiz",
+    "leaderboard",
+    "full-stack"
+  ],
+  "author": "",
+  "license": "MIT"
+}

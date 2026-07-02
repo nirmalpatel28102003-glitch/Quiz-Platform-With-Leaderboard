@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuizForge Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">Q</div>
+          <div>
+            <p class="eyebrow">QuizForge</p>
+            <h1>Live Quiz Arena</h1>
+          </div>
+        </div>
+
+        <form id="player-form" class="player-card">
+          <label for="player-name">Player</label>
+          <div class="name-row">
+            <input id="player-name" name="playerName" maxlength="32" autocomplete="name" placeholder="Your name" required>
+            <button type="submit">Set</button>
+          </div>
+        </form>
+
+        <div class="quiz-list-wrap">
+          <div class="section-heading">
+            <span>Quizzes</span>
+            <span id="quiz-count">0</span>
+          </div>
+          <div id="quiz-list" class="quiz-list"></div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <section class="quiz-stage" aria-live="polite">
+          <div class="stage-top">
+            <div>
+              <p id="active-kicker" class="eyebrow">Choose a quiz</p>
+              <h2 id="active-title">Ready when you are.</h2>
+            </div>
+            <div class="timer" title="Quiz timer">
+              <span id="timer-value">00:00</span>
+            </div>
+          </div>
+
+          <div id="progress-track" class="progress-track" aria-hidden="true">
+            <div id="progress-bar"></div>
+          </div>
+
+          <div id="question-panel" class="question-panel">
+            <div class="empty-state">
+              <div class="empty-visual" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Select a quiz, answer each question, and submit to climb the leaderboard.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="leaderboard-panel">
+          <div class="leaderboard-header">
+            <div>
+              <p class="eyebrow">Leaderboard</p>
+              <h2>Top Scores</h2>
+            </div>
+            <select id="leaderboard-filter" aria-label="Filter leaderboard by quiz">
+              <option value="all">All quizzes</option>
+            </select>
+          </div>
+          <div id="leaderboard" class="leaderboard"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
